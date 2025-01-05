@@ -1,4 +1,33 @@
-# Getting Started with Create React App
+# E-COMMERCE-WEBSITE
+
+## Content
+
+1. [General data](#1)</br>
+2. [Additional documentation](#2)
+3. [Building a repository and local launch](#3)
+4. [Settings](#4)
+5. [Filling the database](#5)
+6. [Launching](#6)
+7. [Implemented features](#7)
+8. [Functionality](#8)
+
+## 1. General data <a id="1"></a>
+
+**E-commerce-website** is online store with product cards, with a cart, with payment system, and also with ability to create an own account.
+
+Application type: E-commerce website </br>
+The interface is designed with a responsive layout, by means of React.js.
+
+<img src="../app_css_flex/assets/exaple-for-readme.png"/>
+<!-- <img src="https://github.com/TarasChybis/webAppProject/blob/button-left/img/main_page.png"/> -->
+
+Technologies used:
+
+**HTML, CSS, SCSS, React.js**
+
+## 2. Additional documentation <a id="2"></a>
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +97,62 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## 3. Building a repository and local launch <a id="3"></a>
+
+Run in console:
+
+```
+git clone https://github.com/TarasChybis/e-commerce-website.git
+```
+```
+npm i react-router
+```
+```
+npm i react-router-dom
+```
+```
+npm start
+```
+
+## 4. Settings <a id="4"></a>
+...
+
+## 5. Filling the database <a id="5"></a>
+...
+
+## 6. Launching <a id="6"></a>
+To run the application, run in the console:
+```
+npm start
+```
+
+## 7. Implemented features <a id="7"></a>
+
+- Font localization;
+- Colors, screen sizes, and container properties are represented by variables;
+- Flexbox;
+- Ipmut;
+- Forms;
+- Buttons;
+- Special characters;
+- Navigation by means of react-routers;
+<!-- - Градієнт, Тінь; -->
+<!-- - Псевдоелементи; -->
+<!-- - iFrame, tel:, mailto; -->
+<!-- - Іконки, Спрайти, icons-sprite; -->
+
+## 8. Functionality <a id="8"></a>
+
+[Redirect to another page](#8.1)</br>
+<!-- [Переадресація на іншу сторінку html з затримкою 5с](#8.2)</br> -->
+
+Redirect to another page:<a id="8.1"></a>
+Redirecting to another page is done using react-routers and react-router-dom.
+
+<!-- Переадресація на іншу сторінку html з затримкою 5с:<a id="8.2"></a>
+```
+setTimeout(function onClickProject() {
+    document.location.href='../webAppProject/html/projects.html';
+}, 5000);
+``` -->
