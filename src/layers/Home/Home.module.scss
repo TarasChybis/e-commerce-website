@@ -1,0 +1,21 @@
+@import '../../utils/Variables.scss';
+
+.container {
+   width: $container-width;
+   max-width: $container-max-width;
+   margin: $container-margin;
+   padding: $container-padding;
+
+   @media screen and (min-width: $bp-desktop) {
+      padding: $container-screen-padding;
+   }
+}
+
+.hero {
+   //   background-color: $color-primary-normal;
+   background-color: aqua;
+   width: 100%;
+   margin-top: 96px;
+   height: calc(100vh - 96px);
+
+}

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: local('Satoshi Regular'), local('Satoshi-Regular'),
+        url(./Satoshi-Regular.woff2) format('woff2'),
+        url(./Satoshi-Regular.woff) format('woff'),
+        url(./Satoshi-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Satoshi';
+    src: local('Satoshi Bold'), local('Satoshi-Bold'),
+        url(./Satoshi-Bold.woff2) format('woff2'),
+        url(./Satoshi-Bold.woff) format('woff'),
+        url(./Satoshi-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Satoshi';
+    src: local('Satoshi Medium'), local('Satoshi-Medium'),
+        url(./Satoshi-Medium.woff2) format('woff2'),
+        url(./Satoshi-Medium.woff) format('woff'),
+        url(./Satoshi-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Integral CF';
+    src: local('Integral CF Bold'), local('Integral-CF-Bold'),
+        url(./IntegralCF-Bold.woff2) format('woff2'),
+        url(./IntegralCF-Bold.woff) format('woff'),
+        url(./IntegralCF-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

@@ -1,0 +1,20 @@
+// $color-bg-container: #9A9A9A;
+$color-brand-light: #FFFFFF;
+$color-brand-dark: #000000;
+$color-primary-normal: #F2F0F1;
+$color-primary-light: #F0F0F0;
+$color-bg-card: #F0EEED;
+// $color-secondary-light: #000000;
+  
+// @media screen and (min-width:
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1440px;
+
+// .container {
+   $container-width: 100%;
+   $container-max-width: calc(1240px + 20px + 20px);
+   $container-margin: 0 auto;
+   $container-padding: 0 20px;
+// @media screen and (min-width: $bp-desktop) {
+   $container-screen-padding: 0 20px;
