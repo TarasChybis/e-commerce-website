@@ -139,9 +139,19 @@ const Home = () => {
                         <div className={styles.blog__titleBlock}>
                            <p className={styles.blog__titleBlock__titleText}></p>
                         </div>
-                        <div className={styles.blog__
-                        }>
-
+                        <div className={styles.blog__carouselBlog}>
+                           <div className={styles.blog__carouselBlog__container}>
+                              <div className={styles.blog__carouselBlog__card}>
+                                 <div className={styles.blog__carouselBlog__card__rungStars}></div>
+                                 <div className={styles.blog__carouselBlog__card__userBlock}>
+                                    <div className={styles.blog__carouselBlog__card__userTitle}>
+                                       <p className={styles.blog__carouselBlog__card__userName}></p>
+                                       <img className={styles.blog__carouselBlog__card__checkMarkIcon} src='/' alt='check-mark-icon'></img>
+                                    </div>
+                                    <div className={styles.blog__carouselBlog__card__userText}></div>
+                                 </div>                                    
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
