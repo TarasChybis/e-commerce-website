@@ -8,10 +8,10 @@ import Home from "../../layers/Home/Home";
 // import Brands from "../Pages/Blog";
 
 import styles from "./Header.module.scss"
-import arrowDown from "../../assets/Arrow-down.svg"
-import searchIcon from "../../assets/SearchIcon.svg"
-import cartIcon from "../../assets/CartIcon.svg"
-import userIcon from "../../assets/UserIcon.svg"
+import arrowDown from "../../assets/Header-arrow-down.svg"
+import searchIcon from "../../assets/Header-search-icon.svg"
+import cartIcon from "../../assets/Header-cart-icon.svg"
+import userIcon from "../../assets/Header-user-icon.svg"
 
 const Header = () => {
 

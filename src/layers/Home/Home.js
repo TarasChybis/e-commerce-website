@@ -36,11 +36,11 @@ const Home = () => {
          <section className={styles.brandsLine}>
             <div className={styles.container}>
                <ul className={styles.brandsLine__list}>
-                  <li className={styles.brandsLine__item}></li>
-                  <li className={styles.brandsLine__item}></li>
-                  <li className={styles.brandsLine__item}></li>
-                  <li className={styles.brandsLine__item}></li>
-                  <li className={styles.brandsLine__item}></li>
+                  <li className={styles.brandsLine__list__item}></li>
+                  <li className={styles.brandsLine__list__item}></li>
+                  <li className={styles.brandsLine__list__item}></li>
+                  <li className={styles.brandsLine__list__item}></li>
+                  <li className={styles.brandsLine__list__item}></li>
                </ul>
             </div>
          </section>
@@ -56,16 +56,16 @@ const Home = () => {
                            <img className={styles.newArrivals__productBlock__productCard__imageBlock__imageItem} src='/' alt='new-arrivals-img1' />
                         </div>
                         <div className={styles.newArrivals__productBlock__productCard__titleBlock}>
-                           <p className={styles.newArrivals__productBlock__productCard__titleText}></p>
+                           <p className={styles.newArrivals__productBlock__productCard__titleBlock__titleText}></p>
                         </div>
                         <div className={styles.newArrivals__productBlock__productCard__rungBlock}>
-                           <div className={styles.newArrivals__productBlock__productCard__rungStars}></div>
-                           <p className={styles.newArrivals__productBlock__productCard__rungText}></p>
+                           <div className={styles.newArrivals__productBlock__productCard__rungBlock__rungStars}></div>
+                           <p className={styles.newArrivals__productBlock__productCard__rungBlock__rungText}></p>
                         </div>
                         <div className={styles.newArrivals__productBlock__productCard__priceBlock}>
-                           <p className={styles.newArrivals__productBlock__productCard__currentPrice}></p>
-                           <p className={styles.newArrivals__productBlock__productCard__oldPrice}></p>
-                           <p className={styles.newArrivals__productBlock__productCard__discount}></p>
+                           <p className={styles.newArrivals__productBlock__productCard__priceBlock__currentPrice}></p>
+                           <p className={styles.newArrivals__productBlock__productCard__priceBlock__oldPrice}></p>
+                           <p className={styles.newArrivals__productBlock__productCard__priceBlock__discount}></p>
                         </div>
                      </li>
                      <li className={styles.newArrivals__productBlock__productCard}></li>
@@ -90,16 +90,16 @@ const Home = () => {
                            <img className={styles.topSelling__productBlock__productCard__imageBlock__imageItem} src='/' alt='new-arrivals-img1' />
                         </div>
                         <div className={styles.topSelling__productBlock__productCard__titleBlock}>
-                           <p className={styles.topSelling__productBlock__productCard__titleText}></p>
+                           <p className={styles.topSelling__productBlock__productCard__titleBlock__titleText}></p>
                         </div>
                         <div className={styles.topSelling__productBlock__productCard__rungBlock}>
-                           <div className={styles.topSelling__productBlock__productCard__rungStars}></div>
-                           <p className={styles.topSelling__productBlock__productCard__rungText}></p>
+                           <div className={styles.topSelling__productBlock__productCard__rungBlock__rungStars}></div>
+                           <p className={styles.topSelling__productBlock__productCard__rungBlock__rungText}></p>
                         </div>
                         <div className={styles.topSelling__productBlock__productCard__priceBlock}>
-                           <p className={styles.topSelling__productBlock__productCard__currentPrice}></p>
-                           <p className={styles.topSelling__productBlock__productCard__oldPrice}></p>
-                           <p className={styles.topSelling__productBlock__productCard__discount}></p>
+                           <p className={styles.topSelling__productBlock__productCard__priceBlock__currentPrice}></p>
+                           <p className={styles.topSelling__productBlock__productCard__priceBlock__oldPrice}></p>
+                           <p className={styles.topSelling__productBlock__productCard__priceBlock__discount}></p>
                         </div>
                      </li>
                      <li className={styles.topSelling__productBlock__productCard}></li>
@@ -144,11 +144,11 @@ const Home = () => {
                               <div className={styles.blog__carouselBlog__card}>
                                  <div className={styles.blog__carouselBlog__card__rungStars}></div>
                                  <div className={styles.blog__carouselBlog__card__userBlock}>
-                                    <div className={styles.blog__carouselBlog__card__userTitle}>
-                                       <p className={styles.blog__carouselBlog__card__userName}></p>
-                                       <img className={styles.blog__carouselBlog__card__checkMarkIcon} src='/' alt='check-mark-icon'></img>
+                                    <div className={styles.blog__carouselBlog__card__userBlock__userTitle}>
+                                       <p className={styles.blog__carouselBlog__card__userBlock__userTitle__userName}></p>
+                                       <img className={styles.blog__carouselBlog__card__userBlock__userTitle__checkMarkIcon} src='/' alt='check-mark-icon'></img>
                                     </div>
-                                    <div className={styles.blog__carouselBlog__card__userText}></div>
+                                    <div className={styles.blog__carouselBlog__card__userBlock__userText}></div>
                                  </div>                                    
                               </div>
                            </div>

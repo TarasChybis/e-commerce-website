@@ -11,11 +11,211 @@
    }
 }
 
+.buttonDark {}
+
+.buttonLight {}
+
 .hero {
-   //   background-color: $color-primary-normal;
-   background-color: aqua;
+   position: relative;
    width: 100%;
    margin-top: 96px;
-   height: calc(100vh - 96px);
+   height: calc(100vh - 96px - 122px);
+   // background: $color-primary-normal url('../../assets/Hero-image.png') no-repeat scroll right 100px top -50px;
+   /*background-color, background-image, background-repeat, background-attachment, background-position*/
+   background-color: $color-primary-normal;
+   background-image: url('../../assets/Hero-boy-and-girl-image.png');
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: right 150px top -50px;
+   background-size: 35%;
 
+   &::before {
+      content: "";
+      background-image: url('../../assets/Hero-star-image.svg');
+      background-size: 100%;
+      width: 50px;
+      height: 50px;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      position: absolute;
+      right: 640px;
+      top: 230px;
+      // rotate: 15deg;
+
+      // @media screen and (min-width: $bp-tablet) {
+      //    background-image: url(../images/decor-bread-left_tablet.png);
+      //    width: 180px;
+      //    height: 120px;
+      //    background-size: 100%;
+      //    background-repeat: no-repeat;
+      //    position: absolute;
+      //    left: 0;
+      //    bottom: 0;
+      //    rotate: 0deg;
+      // }
+   }
+
+   &::after {
+      content: "";
+      background-image: url('../../assets/Hero-star-image.svg');
+      background-size: 100%;
+      width: 104px;
+      height: 104px;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      position: absolute;
+      right: 150px;
+      top: 60px;
+      // rotate: 15deg;
+
+      // @media screen and (min-width: $bp-tablet) {
+      //    background-image: url(../images/decor-bread-left_tablet.png);
+      //    width: 180px;
+      //    height: 120px;
+      //    background-size: 100%;
+      //    background-repeat: no-repeat;
+      //    position: absolute;
+      //    left: 0;
+      //    bottom: 0;
+      //    rotate: 0deg;
+      // }
+   }
+
+   &__container {}
+
+   &__titleBlock {
+      &__titleText {}
+   }
+
+   &__textBlock {
+      &__textText {}
+   }
+
+   &__buttonBlock {}
+
+   &__achievement {
+      &__achievementItem {
+         &__number {}
+
+         &__text {}
+      }
+   }
+}
+
+.brandsLine {
+   &__list {
+      &__item {}
+   }
+}
+
+.newArrivals {
+   &__titleBlock {
+      &__titleText {}
+   }
+
+   &__container {}
+
+   &__productBlock {
+      &__productCard {
+         &__imageBlock {
+            &__imageItem {}
+         }
+
+         &__titleBlock {
+            &__titleText {}
+         }
+
+         &__rungBlock {
+            &__rungStars {}
+
+            &__rungText {}
+         }
+
+         &__priceBlock {
+            &__currentPrice {}
+
+            &__oldPrice {}
+
+            &__discount {}
+         }
+      }
+   }
+
+   &__buttonBlock {}
+}
+
+.topSelling {
+   &__titleBlock {
+      &__titleText {}
+   }
+
+   &__container {}
+
+   &__productBlock {
+      &__productCard {
+         &__imageBlock {
+            &__imageItem {}
+         }
+
+         &__titleBlock {
+            &__titleText {}
+         }
+
+         &__rungBlock {
+            &__rungStars {}
+
+            &__rungText {}
+         }
+
+         &__priceBlock {
+            &__currentPrice {}
+
+            &__oldPrice {}
+
+            &__discount {}
+         }
+      }
+   }
+
+   &__buttonBlock {}
+}
+
+.dressStyle {
+   &__container {}
+
+   &__titleBlock {
+      &__titleText {}
+   }
+
+   &__styleBlock {
+      &__styleCard {
+         &__text {}
+      }
+   }
+}
+
+.blog {
+   &__container {}
+
+   &__titleBlock {
+      &__titleText {}
+   }
+
+   &__carouselBlog {
+      &__container {}
+
+      &__card {
+         &__rungStars {}
+
+         &__userBlock {
+            &__userTitle {
+               &__userName {}
+
+               &__checkMarkIcon {}
+            }
+
+            &__userText {}
+         }
+      }
+   }
 }
