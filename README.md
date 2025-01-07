@@ -109,7 +109,16 @@ git clone https://github.com/TarasChybis/e-commerce-website.git
 npm i react-router
 ```
 ```
+npm i react-router
+```
+```
 npm i react-router-dom
+```
+```
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+```
+```
+npm i styled-components
 ```
 ```
 npm start
