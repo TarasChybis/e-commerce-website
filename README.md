@@ -139,7 +139,7 @@ npm start
 ## 7. Implemented features <a id="7"></a>
 
 - Font localization;
-- Colors, screen sizes, and container properties are represented by variables;
+- Variables and mixins (colors, screen sizes, and fonts properties);
 - Flexbox;
 - Ipmut;
 - Forms;
