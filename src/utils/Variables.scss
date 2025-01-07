@@ -6,6 +6,30 @@ $color-primary-light: #F0F0F0;
 $color-bg-card: #F0EEED;
 // $color-secondary-light: #000000;
 
+@mixin font-brand-hard {
+   font-family: 'Integral CF', sans-serif;
+   font-weight: 700;
+   font-style: normal;
+}
+
+@mixin font-primary-light {
+   font-family: 'Satoshi', sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+@mixin font-primary-normal {
+   font-family: 'Satoshi', sans-serif;
+   font-weight: 500;
+   font-style: normal;
+}
+
+@mixin font-primary-hard {
+   font-family: 'Satoshi', sans-serif;
+   font-weight: 700;
+   font-style: normal;
+}
+
 // @media screen and (min-width:
 $bp-mobile: 480px;
 $bp-tablet: 768px;
