@@ -1,0 +1,13 @@
+@import '../../utils/Variables.scss';
+
+.container {
+   border: 2px solid blue;
+   width: 100%;
+   max-width: calc(1240px + 20px + 20px);
+   margin: 0 auto;
+   padding: 0 20px;
+
+   @media screen and (min-width: $bp-desktop) {
+      padding: 0 20px;
+   }
+}
