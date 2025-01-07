@@ -7,17 +7,7 @@
    left: 0;
    width: 100%;
    padding: 24px 0px;
-}
-
-.container {
-   width: $container-width;
-   max-width: $container-max-width;
-   margin: $container-margin;
-   padding: $container-padding;
-
-   @media screen and (min-width: $bp-desktop) {
-      padding: $container-screen-padding;
-   }
+   z-index: 2;
 }
 
 .headerContainer {
@@ -32,11 +22,11 @@
    gap: 40px;
    margin: 4px 0px;
 
-   .logoLink {
+   &__logoLink {
       display: flex;
       align-items: center;
 
-      .logoText {
+      &__logoText {
          font-family: 'Integral CF';
          font-weight: 700;
          font-size: 32px;
@@ -49,12 +39,12 @@
       }
    }
 
-   .navBar {
+   &__navBar {
       display: flex;
       align-items: center;
       gap: 24px;
 
-      .navBarItem {
+      &__navBarItem {
          font-family: 'Satoshi';
          font-weight: 400;
          height: 16px;
@@ -63,7 +53,7 @@
          align-items: center;
       }
 
-      .navBarItemOne {
+      &__navBarItem:first-child {
          display: flex;
          gap: 4px;
       }
@@ -80,7 +70,7 @@
    display: flex;
    align-items: center;
 
-   .searchIcon {
+   &__searchIcon {
       background-image: url('../../assets/Header-search-icon.svg');
       position: absolute;
       background-size: 100%;
@@ -94,7 +84,7 @@
       cursor: pointer;
    }
 
-   .searchInput {
+   &__searchInput {
       font-family: 'Satoshi';
       font-weight: 400;
       font-size: 16px;
