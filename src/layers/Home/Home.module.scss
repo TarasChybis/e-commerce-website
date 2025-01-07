@@ -1,32 +1,37 @@
 @import '../../utils/Variables.scss';
 
-.container {
-   width: $container-width;
-   max-width: $container-max-width;
-   margin: $container-margin;
-   padding: $container-padding;
-
-   @media screen and (min-width: $bp-desktop) {
-      padding: $container-screen-padding;
-   }
+.buttonDark {
+   display: block;
+   width: 100%;
+   max-width: 210px;
+   padding: 18px 0;
+   border: 2px solid;
+   border-color: $color-brand-dark;
+   border-radius: 26px;
+   background-color: $color-brand-dark;
+   @include font-primary-normal;
+   color: $color-brand-light;
+   font-size: 16px;
+   line-height: 1;
+   text-align: center;
+   cursor: pointer;
 }
-
-.buttonDark {}
 
 .buttonLight {}
 
 .hero {
+   position: relative;
    width: 100%;
+   height: calc(100vh - 94px);
    margin-top: 96px;
-   height: calc(100vh - 96px - 122px);
    // background: $color-primary-normal url('../../assets/Hero-image.png') no-repeat scroll right 100px top -50px;
    /*background-color, background-image, background-repeat, background-attachment, background-position*/
    background-color: $color-primary-normal;
    background-image: url('../../assets/Hero-boy-and-girl-image.png');
    background-repeat: no-repeat;
    background-attachment: scroll;
-   background-position: right 150px top -50px;
-   background-size: 35%;
+   background-position: right 130px top -50px;
+   background-size: 40%;
 
    &::before {
       content: "";
@@ -37,8 +42,8 @@
       background-repeat: no-repeat;
       background-attachment: scroll;
       position: absolute;
-      right: 640px;
-      top: 230px;
+      right: 700px;
+      top: 270px;
       // rotate: 15deg;
 
       // @media screen and (min-width: $bp-tablet) {
@@ -63,7 +68,7 @@
       background-repeat: no-repeat;
       background-attachment: scroll;
       position: absolute;
-      right: 150px;
+      right: 120px;
       top: 60px;
       // rotate: 15deg;
 
@@ -80,23 +85,65 @@
       // }
    }
 
-   &__container {}
+   &__container {
+      padding-top: 103px;
+      width: 560px;
 
-   &__titleBlock {
-      &__titleText {}
-   }
+      &__titleBlock {
+         &__titleText {
+            @include font-brand-hard;
+            color: $color-brand-dark;
+            font-size: 64px;
+            line-height: 1;
+         }
+      }
 
-   &__textBlock {
-      &__textText {}
-   }
+      &__textBlock {
+         margin-top: 32px;
 
-   &__buttonBlock {}
+         &__textText {
+            @include font-primary-light;
+            color: $color-brand-dark;
+            font-size: 16px;
+            line-height: 1.4;
+            opacity: 0.6;
+         }
+      }
+
+      &__buttonBlock {
+         margin-top: 32px;
+      }
+      }
 
    &__achievement {
-      &__achievementItem {
-         &__number {}
+      margin-top: 48px;
+      display: flex;
 
-         &__text {}
+      &__achievementItem {
+         padding: 0 32px;
+
+         &__number {
+            @include font-primary-hard;
+            color: $color-brand-dark;
+            font-size: 40px;
+            line-height: 1.35;
+         }
+
+         &__text {
+            @include font-primary-light;
+            color: $color-brand-dark;
+            font-size: 16px;
+            line-height: 1.4;        
+            opacity: 0.6;
+         }
+      }
+
+      &__achievementItem:first-child {
+         padding-left: 0;
+      }
+
+      &__achievementItem:last-child {
+         padding-right: 0;
       }
    }
 }

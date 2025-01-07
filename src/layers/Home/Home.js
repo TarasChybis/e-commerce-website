@@ -1,37 +1,38 @@
 import React from 'react'
 import styles from './Home.module.scss'
+import Container from '../../components/Container/Container'
 
 const Home = () => {
    return (
       <>
          <section className={styles.hero}>
-            <div className={styles.container}>
+            <Container>
                <div className={styles.hero__container}>
-                  <div className={styles.hero__titleBlock}>
-                     <h1 className={styles.hero__titleBlock__titleText}>Home</h1>
+                  <div className={styles.hero__container__titleBlock}>
+                     <h1 className={styles.hero__container__titleBlock__titleText}>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
                   </div>
-                  <div className={styles.hero__textBlock}>
-                     <p className={styles.hero__textBlock__textText}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, perferendis voluptatem maiores veniam molestias error.</p>
+                  <div className={styles.hero__container__textBlock}>
+                     <p className={styles.hero__container__textBlock__textText}>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
                   </div>
-                  <div className={styles.hero__buttonBlock}>
-                     <button className={styles.buttonDark}></button>
-                  </div>
-                  <div className={styles.hero__achievement}>
-                     <div className={styles.hero__achievement__achievementItem}>
-                        <p className={styles.hero__achievement__achievementItem__number}>200+</p>
-                        <p className={styles.hero__achievement__achievementItem__text}>Brands</p>
-                     </div>
-                     <div className={styles.hero__achievement__achievementItem}>
-                        <p className={styles.hero__achievement__achievementItem__number}>2,000+</p>
-                        <p className={styles.hero__achievement__achievementItem__text}>Products</p>
-                     </div>
-                     <div className={styles.hero__achievement__achievementItem}>
-                        <p className={styles.hero__achievement__achievementItem__number}>30,000+</p>
-                        <p className={styles.hero__achievement__achievementItem__text}>Customers</p>
-                     </div>
+                  <div className={styles.hero__container__buttonBlock}>
+                     <button className={styles.buttonDark} type='button'>Shop Now</button>
                   </div>
                </div>
-            </div>
+               <div className={styles.hero__achievement}>
+                  <div className={styles.hero__achievement__achievementItem}>
+                     <p className={styles.hero__achievement__achievementItem__number}>200+</p>
+                     <p className={styles.hero__achievement__achievementItem__text}>International Brands</p>
+                  </div>
+                  <div className={styles.hero__achievement__achievementItem}>
+                     <p className={styles.hero__achievement__achievementItem__number}>2,000+</p>
+                     <p className={styles.hero__achievement__achievementItem__text}>High-Quality Products</p>
+                  </div>
+                  <div className={styles.hero__achievement__achievementItem}>
+                     <p className={styles.hero__achievement__achievementItem__number}>30,000+</p>
+                     <p className={styles.hero__achievement__achievementItem__text}>Happy Customers</p>
+                  </div>
+               </div>
+            </Container>
          </section>
          <section className={styles.brandsLine}>
             <div className={styles.container}>
@@ -112,7 +113,7 @@ const Home = () => {
                </div>
                <section className={styles.dressStyle}>
                   <div className={styles.container}>
-                     <div className={styles.dressStyle__container}> 
+                     <div className={styles.dressStyle__container}>
                         <div className={styles.dressStyle__titleBlock}>
                            <h2 className={styles.dressStyle__titleBlock__titleText}>browse by dress style</h2>
                         </div>
@@ -149,7 +150,7 @@ const Home = () => {
                                        <img className={styles.blog__carouselBlog__card__userBlock__userTitle__checkMarkIcon} src='/' alt='check-mark-icon'></img>
                                     </div>
                                     <div className={styles.blog__carouselBlog__card__userBlock__userText}></div>
-                                 </div>                                    
+                                 </div>
                               </div>
                            </div>
                         </div>
