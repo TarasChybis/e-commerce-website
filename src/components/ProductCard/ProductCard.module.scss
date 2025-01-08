@@ -1,0 +1,78 @@
+@import '../../utils/Variables.scss';
+
+.productCard {
+   display: flex;
+   flex-direction: column;
+
+   &__imageBlock {
+      max-width: 295px;
+      max-height: 298px;
+
+      &__imageItem {
+         width: 100%;
+         height: auto;
+      }
+   }
+
+   &__titleBlock {
+      margin-top: 16px;
+      &__titleText {
+         @include font-primary-hard;
+         color: $color-brand-dark;
+         font-size: 20px;
+         line-height: 1.35;
+      }
+   }
+
+   &__rungBlock {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin-top: 8px;
+
+      &__rungStarsFive {
+         width: 111px;
+         height: 18.5px;
+         background-image: url('../../assets/rungStars-five.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: scroll;
+         background-position: left center;
+
+
+         &__fourePointFive {
+            width: calc(111px / 5 * 4.5);
+         }
+   }
+
+      &__rungNumber {
+         display: flex;
+         @include font-primary-light;
+         font-size: 14px;
+         line-height: 1.35;
+
+         &__fromUsers {
+            color: $color-brand-dark;
+         }
+         &__fraction {
+            color: $color-brand-dark;
+         }
+         &__thereIsOnly {
+            color: $color-brand-dark;
+            opacity: 0.6;
+         }
+      }
+   }
+
+   &__priceBlock {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+
+      &__currentPrice {}
+
+      &__oldPrice {}
+
+      &__discount {}
+   }
+}

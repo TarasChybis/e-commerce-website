@@ -22,8 +22,9 @@
 .hero {
    position: relative;
    width: 100%;
-   height: calc(100vh - 94px);
+   min-height: calc(100vh - 94px);
    margin-top: 96px;
+   padding: 103px 0 50px;
    // background: $color-primary-normal url('../../assets/Hero-image.png') no-repeat scroll right 100px top -50px;
    /*background-color, background-image, background-repeat, background-attachment, background-position*/
    background-color: $color-primary-normal;
@@ -86,7 +87,7 @@
    }
 
    &__container {
-      padding-top: 103px;
+      // padding-top: 103px;
       width: 560px;
 
       &__titleBlock {
@@ -168,39 +169,36 @@
 }
 
 .newArrivals {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-color: $color-brand-light;
+
    &__titleBlock {
-      &__titleText {}
-   }
+      display: flex;
+      justify-content: center;
+      margin-top: 72px;
 
-   &__container {}
-
-   &__productBlock {
-      &__productCard {
-         &__imageBlock {
-            &__imageItem {}
-         }
-
-         &__titleBlock {
-            &__titleText {}
-         }
-
-         &__rungBlock {
-            &__rungStars {}
-
-            &__rungText {}
-         }
-
-         &__priceBlock {
-            &__currentPrice {}
-
-            &__oldPrice {}
-
-            &__discount {}
-         }
+      &__titleText {
+         @include font-brand-hard;
+         color: $color-brand-dark;
+         font-size: 48px;
+         line-height: 1.2;
       }
    }
 
-   &__buttonBlock {}
+   &__container {
+      margin-top: 55px;
+   }
+
+   &__productBlock {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__buttonBlock {
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+   }
 }
 
 .topSelling {

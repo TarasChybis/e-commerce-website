@@ -8,6 +8,9 @@ import guccilogo from '../../assets/brandsLine-gucci-logo.svg'
 import pradaLogo from '../../assets/brandsLine-prada-logo.svg'
 import calvinKleinLogo from '../../assets/brandsLine-calvin-klein-logo.svg'
 
+import ProductCurd from '../../components/ProductCard/ProductCurd'
+import tShirtWithTapeDetails from '../../assets/newArrivals-T-SHIRT-WITH-TAPE-DETAILS.png'
+
 const Home = () => {
    return (
       <>
@@ -64,38 +67,29 @@ const Home = () => {
             </Container>
          </section>
          <section className={styles.newArrivals}>
-            <div className={styles.container}>
+            <Container>
                <div className={styles.newArrivals__titleBlock}>
-                  <h2 className={styles.newArrivals__titleBlock__titleText}>NewArrivals</h2>
+                  <h2 className={styles.newArrivals__titleBlock__titleText}>NEW ARRIVALS</h2>
                </div>
                <div className={styles.newArrivals__container}>
                   <ul className={styles.newArrivals__productBlock}>
-                     <li className={styles.newArrivals__productBlock__productCard}>
-                        <div className={styles.newArrivals__productBlock__productCard__imageBlock}>
-                           <img className={styles.newArrivals__productBlock__productCard__imageBlock__imageItem} src='/' alt='new-arrivals-img1' />
-                        </div>
-                        <div className={styles.newArrivals__productBlock__productCard__titleBlock}>
-                           <p className={styles.newArrivals__productBlock__productCard__titleBlock__titleText}></p>
-                        </div>
-                        <div className={styles.newArrivals__productBlock__productCard__rungBlock}>
-                           <div className={styles.newArrivals__productBlock__productCard__rungBlock__rungStars}></div>
-                           <p className={styles.newArrivals__productBlock__productCard__rungBlock__rungText}></p>
-                        </div>
-                        <div className={styles.newArrivals__productBlock__productCard__priceBlock}>
-                           <p className={styles.newArrivals__productBlock__productCard__priceBlock__currentPrice}></p>
-                           <p className={styles.newArrivals__productBlock__productCard__priceBlock__oldPrice}></p>
-                           <p className={styles.newArrivals__productBlock__productCard__priceBlock__discount}></p>
-                        </div>
-                     </li>
-                     <li className={styles.newArrivals__productBlock__productCard}></li>
-                     <li className={styles.newArrivals__productBlock__productCard}></li>
-                     <li className={styles.newArrivals__productBlock__productCard}></li>
+                     <ProductCurd
+                        image={tShirtWithTapeDetails} 
+                        title='T-shirt with Tape Details'
+                        rungNumber='5'
+                        currentPrice=''
+                        oldPrice=''
+                        discount=''
+                     />
+                     <ProductCurd />
+                     <ProductCurd />
+                     <ProductCurd />
                   </ul>
                </div>
                <div className={styles.newArrivals__buttonBlock}>
                   <button className={styles.buttonLight} type='button'>View All</button>
                </div>
-            </div>
+            </Container>
          </section>
          <section className={styles.topSelling}>
             <div className={styles.container}>
