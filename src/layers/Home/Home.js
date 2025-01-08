@@ -2,6 +2,12 @@ import React from 'react'
 import styles from './Home.module.scss'
 import Container from '../../components/Container/Container'
 
+import versaceLogo from '../../assets/brandsLine-versace-logo.svg'
+import zaraLogo from '../../assets/brandsLine-zara-logo.svg'
+import guccilogo from '../../assets/brandsLine-gucci-logo.svg'
+import pradaLogo from '../../assets/brandsLine-prada-logo.svg'
+import calvinKleinLogo from '../../assets/brandsLine-calvin-klein-logo.svg'
+
 const Home = () => {
    return (
       <>
@@ -35,15 +41,27 @@ const Home = () => {
             </Container>
          </section>
          <section className={styles.brandsLine}>
-            <div className={styles.container}>
-               <ul className={styles.brandsLine__list}>
-                  <li className={styles.brandsLine__list__item}></li>
-                  <li className={styles.brandsLine__list__item}></li>
-                  <li className={styles.brandsLine__list__item}></li>
-                  <li className={styles.brandsLine__list__item}></li>
-                  <li className={styles.brandsLine__list__item}></li>
-               </ul>
-            </div>
+            <Container>
+               <div className={styles.brandsLine__carousel}>
+                  <ul className={styles.brandsLine__carousel__list}>
+                     <li className={styles.brandsLine__carousel__list__item}>
+                        <img src={versaceLogo} alt='versace-logo-img' height='33px'/>
+                     </li>
+                     <li className={styles.brandsLine__carousel__list__item}>
+                        <img src={zaraLogo} alt='zara-logo-img' height='38px' />
+                     </li>
+                     <li className={styles.brandsLine__carousel__list__item}>
+                        <img src={guccilogo} alt='gucci-logo-img' height='36px' />
+                     </li>
+                     <li className={styles.brandsLine__carousel__list__item}>
+                        <img src={pradaLogo} alt='prada-logo-img' height='32px' />
+                     </li>
+                     <li className={styles.brandsLine__carousel__list__item}>
+                        <img src={calvinKleinLogo} alt='calvin-klein-logo-img' height='33.35px' />
+                     </li>
+                  </ul>
+               </div>
+            </Container>
          </section>
          <section className={styles.newArrivals}>
             <div className={styles.container}>
