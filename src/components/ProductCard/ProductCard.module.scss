@@ -7,6 +7,7 @@
    &__imageBlock {
       max-width: 295px;
       max-height: 298px;
+      border-radius: 20px;
 
       &__imageItem {
          width: 100%;
@@ -30,20 +31,59 @@
       gap: 13px;
       margin-top: 8px;
 
-      &__rungStarsFive {
-         width: 111px;
-         height: 18.5px;
+      &__rungStars {
          background-image: url('../../assets/rungStars-five.png');
          background-size: cover;
          background-repeat: no-repeat;
          background-attachment: scroll;
          background-position: left center;
-
-
-         &__fourePointFive {
-            width: calc(111px / 5 * 4.5);
+         
+         &__five {
+            width: 111px;
+            height: 18.5px;
+            background-image: url('../../assets/rungStars-five.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: left center;
          }
-   }
+         &__fourPointFive {
+            width: calc(111px / 5 * 4.5);
+            height: 18.5px;
+            background-image: url('../../assets/rungStars-five.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: left center;
+         }
+         &__four {
+            width: calc(111px / 5 * 4);
+            height: 18.5px;
+            background-image: url('../../assets/rungStars-five.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: left center;
+         }
+         &__threePointFive {
+            width: calc(111px / 5 * 3.5);
+            height: 18.5px;
+            background-image: url('../../assets/rungStars-five.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: left center;
+         }
+         &__three {
+            width: calc(111px / 5 * 3);
+            height: 18.5px;
+            background-image: url('../../assets/rungStars-five.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: left center;
+         }
+      }
 
       &__rungNumber {
          display: flex;
@@ -54,9 +94,9 @@
          &__fromUsers {
             color: $color-brand-dark;
          }
-         &__fraction {
-            color: $color-brand-dark;
-         }
+         // &__fraction {
+         //    color: $color-brand-dark;
+         // }
          &__thereIsOnly {
             color: $color-brand-dark;
             opacity: 0.6;
@@ -66,13 +106,34 @@
 
    &__priceBlock {
       display: flex;
+      align-items: center;
       gap: 10px;
       margin-top: 8px;
 
-      &__currentPrice {}
+      &__currentPrice {
+         @include font-primary-hard;
+         color: $color-brand-dark;
+         font-size: 24px;
+         line-height: 1.35;
+      }
 
-      &__oldPrice {}
+      &__oldPrice {
+         @include font-primary-hard;
+         color: $color-brand-dark;
+         font-size: 24px;
+         line-height: 1.35;
+         opacity: 0.4;
+         text-decoration: line-through;
+      }
 
-      &__discount {}
+      &__discount {
+         @include font-primary-normal;
+         color: $color-highlight;
+         font-size: 12px;
+         line-height: 1.35;
+         padding: 6px 13.5px;
+         background-color: rgba($color: #ff0000, $alpha: 0.1);
+         border-radius: 14px;
+      }
    }
 }
