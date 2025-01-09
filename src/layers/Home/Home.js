@@ -8,7 +8,7 @@ import guccilogo from '../../assets/brandsLine-gucci-logo.svg'
 import pradaLogo from '../../assets/brandsLine-prada-logo.svg'
 import calvinKleinLogo from '../../assets/brandsLine-calvin-klein-logo.svg'
 
-import ProductCurd from '../../components/ProductCard/ProductCurd'
+import ProductCard from '../../components/ProductCard/ProductCard'
 import tShirtWithTapeDetails from '../../assets/newArrivals-T-SHIRT-WITH-TAPE-DETAILS.png'
 
 const Home = () => {
@@ -73,17 +73,18 @@ const Home = () => {
                </div>
                <div className={styles.newArrivals__container}>
                   <ul className={styles.newArrivals__productBlock}>
-                     <ProductCurd
-                        image={tShirtWithTapeDetails} 
+                     <ProductCard
+                        image={tShirtWithTapeDetails}
                         title='T-shirt with Tape Details'
-                        rungNumber='5'
-                        currentPrice=''
-                        oldPrice=''
-                        discount=''
+                        rungNumber='4.5/'
+                        currency='&#8372;'
+                        currentPrice='120'
+                        oldPrice='222'
+                        discount='-20%'
                      />
-                     <ProductCurd />
-                     <ProductCurd />
-                     <ProductCurd />
+                     <ProductCard />
+                     <ProductCard />
+                     <ProductCard />
                   </ul>
                </div>
                <div className={styles.newArrivals__buttonBlock}>
