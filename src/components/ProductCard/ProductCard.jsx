@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './ProductCard.module.scss'
-
+   
 const ProductCard = (props) => {
-   const { image, title, rungNumber, currency, currentPrice, oldPrice, discount } = props
+   const { image, title, rungNumber, currency, currentPrice, oldPrice } = props
+   let discount
 
-   const Raiting = () => {
+   const RaitingStars = () => {
       if (rungNumber === '5/') {
          return <div className={styles.productCard__rungBlock__rungStars__five}></div>
       }
@@ -21,7 +22,28 @@ const ProductCard = (props) => {
          return <div className={styles.productCard__rungBlock__rungStars__three}></div>
       }
       return 'Enter correct number'
-   }  
+   } 
+   
+   const ShowPrice = () => {
+      if (oldPrice === '') {
+         return (
+            <div className={styles.productCard__priceBlock}>
+               <p className={styles.productCard__priceBlock__currentPrice}>{currency}{currentPrice}</p>
+            </div>
+         )
+      }
+      if (oldPrice !== '') {
+         discount = currentPrice / oldPrice * 100
+      }
+
+      return (
+         <div className={styles.productCard__priceBlock}>
+            <p className={styles.productCard__priceBlock__currentPrice}>{currency}{currentPrice}</p>
+            <p className={styles.productCard__priceBlock__oldPrice}>{currency}{oldPrice}</p>
+            <p className={styles.productCard__priceBlock__discount}>{discount}%</p>
+         </div>
+      )
+   }
 
    return (
       <li className={styles.productCard}>
@@ -32,18 +54,13 @@ const ProductCard = (props) => {
             <p className={styles.productCard__titleBlock__titleText}>{title}</p>
          </div>
          <div className={styles.productCard__rungBlock}>
-            <Raiting></Raiting>
+            <RaitingStars></RaitingStars>
             <div className={styles.productCard__rungBlock__rungNumber}>
-               <p className={styles.productCard__rungBlock__rungNumber__fromUsers}>{rungNumber}</p>
-               {/* <p className={styles.productCard__rungBlock__rungNumber__fraction}>/</p> */}
+               <p className={styles.productCard__rungBlock__rungNumber__fromUsers}>{rungNumber}/</p>
                <p className={styles.productCard__rungBlock__rungNumber__thereIsOnly}>5</p>
             </div>
          </div>
-         <div className={styles.productCard__priceBlock}>
-            <p className={styles.productCard__priceBlock__currentPrice}>{currency}{currentPrice}</p>
-            <p className={styles.productCard__priceBlock__oldPrice}>{currency}{oldPrice}</p>
-            <p className={styles.productCard__priceBlock__discount}>{discount}</p>
-         </div>
+         <ShowPrice></ShowPrice>
       </li>
    )
 }
