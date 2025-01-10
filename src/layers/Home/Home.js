@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Home.module.scss'
 import Container from '../../components/Container/Container'
+import ProductCard from '../../components/ProductCard/ProductCard'
 
 import versaceLogo from '../../assets/brandsLine-versace-logo.svg'
 import zaraLogo from '../../assets/brandsLine-zara-logo.svg'
@@ -8,8 +9,11 @@ import guccilogo from '../../assets/brandsLine-gucci-logo.svg'
 import pradaLogo from '../../assets/brandsLine-prada-logo.svg'
 import calvinKleinLogo from '../../assets/brandsLine-calvin-klein-logo.svg'
 
-import ProductCard from '../../components/ProductCard/ProductCard'
 import tShirtWithTapeDetails from '../../assets/newArrivals-T-SHIRT-WITH-TAPE-DETAILS.png'
+import skinnyFitJeans from '../../assets/newArrivals-SKINNY-FIT-JEANS.png'
+import checkeredShirt from '../../assets/newArrivals-CHECKERED-SHIRT.png'
+import sleeveStripedTshirt from '../../assets/newArrivals-SLEEVE-STRIPED-T-SHIRT.png'
+import Button from '../../components/Button/Button'
 
 const Home = () => {
    return (
@@ -24,7 +28,7 @@ const Home = () => {
                      <p className={styles.hero__container__textBlock__textText}>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
                   </div>
                   <div className={styles.hero__container__buttonBlock}>
-                     <button className={styles.buttonDark} type='button'>Shop Now</button>
+                     <Button theme='dark' style={{ width: 210 }} type='button'>Shop Now</Button>
                   </div>
                </div>
                <div className={styles.hero__achievement}>
@@ -48,7 +52,7 @@ const Home = () => {
                <div className={styles.brandsLine__carousel}>
                   <ul className={styles.brandsLine__carousel__list}>
                      <li className={styles.brandsLine__carousel__list__item}>
-                        <img src={versaceLogo} alt='versace-logo-img' height='33px'/>
+                        <img src={versaceLogo} alt='versace-logo-img' height='33px' />
                      </li>
                      <li className={styles.brandsLine__carousel__list__item}>
                         <img src={zaraLogo} alt='zara-logo-img' height='38px' />
@@ -76,19 +80,39 @@ const Home = () => {
                      <ProductCard
                         image={tShirtWithTapeDetails}
                         title='T-shirt with Tape Details'
-                        rungNumber='4.5/'
+                        rungNumber='4.5'
                         currency='&#8372;'
                         currentPrice='120'
-                        oldPrice='222'
-                        discount='-20%'
+                        oldPrice=''
                      />
-                     <ProductCard />
-                     <ProductCard />
-                     <ProductCard />
+                     <ProductCard
+                        image={skinnyFitJeans}
+                        title='Skinny Fit Jeans'
+                        rungNumber='3.5'
+                        currency='&#8372;'
+                        currentPrice='240'
+                        oldPrice='260'
+                     />
+                     <ProductCard
+                        image={checkeredShirt}
+                        title='Checkered Shirt'
+                        rungNumber='4.5'
+                        currency='&#8372;'
+                        currentPrice='180'
+                        oldPrice=''
+                     />
+                     <ProductCard
+                        image={sleeveStripedTshirt}
+                        title='Sleeve Striped T-Shirt'
+                        rungNumber='4.5'
+                        currency='&#8372;'
+                        currentPrice='130'
+                        oldPrice='160'
+                     />
                   </ul>
                </div>
                <div className={styles.newArrivals__buttonBlock}>
-                  <button className={styles.buttonLight} type='button'>View All</button>
+                  <Button theme='light' style={{width: 218}} type='button'>View All</Button>
                </div>
             </Container>
          </section>

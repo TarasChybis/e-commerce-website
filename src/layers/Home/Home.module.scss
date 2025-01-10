@@ -1,24 +1,5 @@
 @import '../../utils/Variables.scss';
 
-.buttonDark {
-   display: block;
-   width: 100%;
-   max-width: 210px;
-   padding: 18px 0;
-   border: 2px solid;
-   border-color: $color-brand-dark;
-   border-radius: 26px;
-   background-color: $color-brand-dark;
-   @include font-primary-normal;
-   color: $color-brand-light;
-   font-size: 16px;
-   line-height: 1;
-   text-align: center;
-   cursor: pointer;
-}
-
-.buttonLight {}
-
 .hero {
    position: relative;
    width: 100%;
@@ -161,9 +142,7 @@
          display: flex;
          justify-content: space-between;
 
-         &__item {
-            
-         }
+         // &__item {}
       }
    }
 }
@@ -197,6 +176,9 @@
    }
 
    &__buttonBlock {
+      display: flex;
+      justify-content: center;
+      padding: 36px 0 64px 0;
       border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
    }
 }
