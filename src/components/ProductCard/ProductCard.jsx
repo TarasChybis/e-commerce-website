@@ -6,19 +6,19 @@ const ProductCard = (props) => {
    let discount
 
    const RaitingStars = () => {
-      if (rungNumber === '5/') {
+      if (rungNumber === '5') {
          return <div className={styles.productCard__rungBlock__rungStars__five}></div>
       }
-      if (rungNumber === '4.5/') {
+      if (rungNumber === '4.5') {
          return <div className={styles.productCard__rungBlock__rungStars__fourPointFive}></div>
       }
-      if (rungNumber === '4/') {
+      if (rungNumber === '4') {
          return <div className={styles.productCard__rungBlock__rungStars__four}></div>
       }
-      if (rungNumber === '3.5/') {
+      if (rungNumber === '3.5') {
          return <div className={styles.productCard__rungBlock__rungStars__threePointFive}></div>
       }
-      if (rungNumber === '3/') {
+      if (rungNumber === '3') {
          return <div className={styles.productCard__rungBlock__rungStars__three}></div>
       }
       return 'Enter correct number'
@@ -33,7 +33,7 @@ const ProductCard = (props) => {
          )
       }
       if (oldPrice !== '') {
-         discount = currentPrice / oldPrice * 100
+         discount = Math.round((oldPrice - currentPrice) / oldPrice * 100)
       }
 
       return (
@@ -54,13 +54,13 @@ const ProductCard = (props) => {
             <p className={styles.productCard__titleBlock__titleText}>{title}</p>
          </div>
          <div className={styles.productCard__rungBlock}>
-            <RaitingStars></RaitingStars>
+            <RaitingStars />
             <div className={styles.productCard__rungBlock__rungNumber}>
                <p className={styles.productCard__rungBlock__rungNumber__fromUsers}>{rungNumber}/</p>
                <p className={styles.productCard__rungBlock__rungNumber__thereIsOnly}>5</p>
             </div>
          </div>
-         <ShowPrice></ShowPrice>
+         <ShowPrice />
       </li>
    )
 }
