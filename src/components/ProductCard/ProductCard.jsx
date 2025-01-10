@@ -6,19 +6,19 @@ const ProductCard = (props) => {
    let discount
 
    const RaitingStars = () => {
-      if (rungNumber === '5') {
+      if (rungNumber === '5.0') {
          return <div className={styles.productCard__rungBlock__rungStars__five}></div>
       }
       if (rungNumber === '4.5') {
          return <div className={styles.productCard__rungBlock__rungStars__fourPointFive}></div>
       }
-      if (rungNumber === '4') {
+      if (rungNumber === '4.0') {
          return <div className={styles.productCard__rungBlock__rungStars__four}></div>
       }
       if (rungNumber === '3.5') {
          return <div className={styles.productCard__rungBlock__rungStars__threePointFive}></div>
       }
-      if (rungNumber === '3') {
+      if (rungNumber === '3.0') {
          return <div className={styles.productCard__rungBlock__rungStars__three}></div>
       }
       return 'Enter correct number'
