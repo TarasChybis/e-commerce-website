@@ -163,6 +163,7 @@
          color: $color-brand-dark;
          font-size: 48px;
          line-height: 1.2;
+         text-transform: uppercase;
       }
    }
 
@@ -184,39 +185,39 @@
 }
 
 .topSelling {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   background-color: $color-brand-light;
+
    &__titleBlock {
-      &__titleText {}
-   }
+      display: flex;
+      justify-content: center;
+      margin-top: 64px;
 
-   &__container {}
-
-   &__productBlock {
-      &__productCard {
-         &__imageBlock {
-            &__imageItem {}
-         }
-
-         &__titleBlock {
-            &__titleText {}
-         }
-
-         &__rungBlock {
-            &__rungStars {}
-
-            &__rungText {}
-         }
-
-         &__priceBlock {
-            &__currentPrice {}
-
-            &__oldPrice {}
-
-            &__discount {}
-         }
+      &__titleText {
+         @include font-brand-hard;
+         color: $color-brand-dark;
+         font-size: 48px;
+         line-height: 1.2;
+         text-transform: uppercase;
       }
    }
 
-   &__buttonBlock {}
+   &__container {
+      margin-top: 55px;
+   }
+
+   &__productBlock {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__buttonBlock {
+      display: flex;
+      justify-content: center;
+      padding-top: 36px;
+   }
 }
 
 .dressStyle {

@@ -15,6 +15,11 @@ import checkeredShirt from '../../assets/newArrivals-CHECKERED-SHIRT.png'
 import sleeveStripedTshirt from '../../assets/newArrivals-SLEEVE-STRIPED-T-SHIRT.png'
 import Button from '../../components/Button/Button'
 
+import verticalStripedShirt from '../../assets/topSelling-VERTICAL-STRIPED-SHIRT.png'
+import courageGraphicTshirt from '../../assets/topSelling-COURAGE-GRAPHIC-T-SHIRT.png'
+import looseFitBermudaShorts from '../../assets/topSelling-LOOSE-FIT-BERMUDA-SHORTS.png'
+import fadedSkinnyJeans from '../../assets/topSelling-FADED-SKINNY-JEANS.png'
+
 const Home = () => {
    return (
       <>
@@ -112,88 +117,100 @@ const Home = () => {
                   </ul>
                </div>
                <div className={styles.newArrivals__buttonBlock}>
-                  <Button theme='light' style={{width: 218}} type='button'>View All</Button>
+                  <Button theme='light' style={{ width: 218 }} type='button'>View All</Button>
                </div>
             </Container>
          </section>
          <section className={styles.topSelling}>
-            <div className={styles.container}>
+            <Container>
                <div className={styles.topSelling__titleBlock}>
-                  <h2 className={styles.topSelling__titleBlock__titleText}>NewArrivals</h2>
+                  <h2 className={styles.topSelling__titleBlock__titleText}>Top Selling</h2>
                </div>
                <div className={styles.topSelling__container}>
                   <ul className={styles.topSelling__productBlock}>
-                     <li className={styles.topSelling__productBlock__productCard}>
-                        <div className={styles.topSelling__productBlock__productCard__imageBlock}>
-                           <img className={styles.topSelling__productBlock__productCard__imageBlock__imageItem} src='/' alt='new-arrivals-img1' />
-                        </div>
-                        <div className={styles.topSelling__productBlock__productCard__titleBlock}>
-                           <p className={styles.topSelling__productBlock__productCard__titleBlock__titleText}></p>
-                        </div>
-                        <div className={styles.topSelling__productBlock__productCard__rungBlock}>
-                           <div className={styles.topSelling__productBlock__productCard__rungBlock__rungStars}></div>
-                           <p className={styles.topSelling__productBlock__productCard__rungBlock__rungText}></p>
-                        </div>
-                        <div className={styles.topSelling__productBlock__productCard__priceBlock}>
-                           <p className={styles.topSelling__productBlock__productCard__priceBlock__currentPrice}></p>
-                           <p className={styles.topSelling__productBlock__productCard__priceBlock__oldPrice}></p>
-                           <p className={styles.topSelling__productBlock__productCard__priceBlock__discount}></p>
-                        </div>
-                     </li>
-                     <li className={styles.topSelling__productBlock__productCard}></li>
-                     <li className={styles.topSelling__productBlock__productCard}></li>
-                     <li className={styles.topSelling__productBlock__productCard}></li>
+                     <ProductCard
+                        image={verticalStripedShirt}
+                        title='Vertical Striped Shirt'
+                        rungNumber='5.0'
+                        currency='&#8372;'
+                        currentPrice='212'
+                        oldPrice='232'
+                     />
+                     <ProductCard
+                        image={courageGraphicTshirt}
+                        title='Courage Graphic T-shirt'
+                        rungNumber='4.0'
+                        currency='&#8372;'
+                        currentPrice='145'
+                        oldPrice=''
+                     />
+                     <ProductCard
+                        image={looseFitBermudaShorts}
+                        title='Loose Fit Bermuda Shorts'
+                        rungNumber='3.0'
+                        currency='&#8372;'
+                        currentPrice='80'
+                        oldPrice=''
+                     />
+                     <ProductCard
+                        image={fadedSkinnyJeans}
+                        title='Faded Skinny Jeans'
+                        rungNumber='4.5'
+                        currency='&#8372;'
+                        currentPrice='210'
+                        oldPrice=''
+                     />
                   </ul>
                </div>
                <div className={styles.topSelling__buttonBlock}>
-                  <button className={styles.buttonLight} type='button'>View All</button>
+                  <Button theme='light' style={{ width: 218 }} type='button'>View All</Button>
                </div>
-               <section className={styles.dressStyle}>
-                  <div className={styles.container}>
-                     <div className={styles.dressStyle__container}>
-                        <div className={styles.dressStyle__titleBlock}>
-                           <h2 className={styles.dressStyle__titleBlock__titleText}>browse by dress style</h2>
-                        </div>
-                        <div className={styles.dressStyle__styleBlock}>
-                           <div className={styles.dressStyle__styleBlock__styleCard}>
-                              <p className={styles.dressStyle__styleBlock__styleCard__text}>Casual</p>
-                           </div>
-                           <div className={styles.dressStyle__styleBlock__styleCard}>
-                              <p className={styles.dressStyle__styleBlock__styleCard__text}>Formal</p>
-                           </div>
-                           <div className={styles.dressStyle__styleBlock__styleCard}>
-                              <p className={styles.dressStyle__styleBlock__styleCard__text}>Party</p>
-                           </div>
-                           <div className={styles.dressStyle__styleBlock__styleCard}>
-                              <p className={styles.dressStyle__styleBlock__styleCard__text}>Gym</p>
-                           </div>
-                        </div>
+            </Container>
+         </section>
+         <section className={styles.dressStyle}>
+            <div className={styles.container}>
+               <div className={styles.dressStyle__container}>
+                  <div className={styles.dressStyle__titleBlock}>
+                     <h2 className={styles.dressStyle__titleBlock__titleText}>browse by dress style</h2>
+                  </div>
+                  <div className={styles.dressStyle__styleBlock}>
+                     <div className={styles.dressStyle__styleBlock__styleCard}>
+                        <p className={styles.dressStyle__styleBlock__styleCard__text}>Casual</p>
+                     </div>
+                     <div className={styles.dressStyle__styleBlock__styleCard}>
+                        <p className={styles.dressStyle__styleBlock__styleCard__text}>Formal</p>
+                     </div>
+                     <div className={styles.dressStyle__styleBlock__styleCard}>
+                        <p className={styles.dressStyle__styleBlock__styleCard__text}>Party</p>
+                     </div>
+                     <div className={styles.dressStyle__styleBlock__styleCard}>
+                        <p className={styles.dressStyle__styleBlock__styleCard__text}>Gym</p>
                      </div>
                   </div>
-               </section>
-               <section className={styles.blog}>
-                  <div className={styles.container}>
-                     <div className={styles.blog__container}>
-                        <div className={styles.blog__titleBlock}>
-                           <p className={styles.blog__titleBlock__titleText}></p>
-                        </div>
-                        <div className={styles.blog__carouselBlog}>
-                           <div className={styles.blog__carouselBlog__container}>
-                              <div className={styles.blog__carouselBlog__card}>
-                                 <div className={styles.blog__carouselBlog__card__rungStars}></div>
-                                 <div className={styles.blog__carouselBlog__card__userBlock}>
-                                    <div className={styles.blog__carouselBlog__card__userBlock__userTitle}>
-                                       <p className={styles.blog__carouselBlog__card__userBlock__userTitle__userName}></p>
-                                       <img className={styles.blog__carouselBlog__card__userBlock__userTitle__checkMarkIcon} src='/' alt='check-mark-icon'></img>
-                                    </div>
-                                    <div className={styles.blog__carouselBlog__card__userBlock__userText}></div>
-                                 </div>
+               </div>
+            </div>
+         </section>
+         <section className={styles.blog}>
+            <div className={styles.container}>
+               <div className={styles.blog__container}>
+                  <div className={styles.blog__titleBlock}>
+                     <p className={styles.blog__titleBlock__titleText}></p>
+                  </div>
+                  <div className={styles.blog__carouselBlog}>
+                     <div className={styles.blog__carouselBlog__container}>
+                        <div className={styles.blog__carouselBlog__card}>
+                           <div className={styles.blog__carouselBlog__card__rungStars}></div>
+                           <div className={styles.blog__carouselBlog__card__userBlock}>
+                              <div className={styles.blog__carouselBlog__card__userBlock__userTitle}>
+                                 <p className={styles.blog__carouselBlog__card__userBlock__userTitle__userName}></p>
+                                 <img className={styles.blog__carouselBlog__card__userBlock__userTitle__checkMarkIcon} src='/' alt='check-mark-icon'></img>
                               </div>
+                              <div className={styles.blog__carouselBlog__card__userBlock__userText}></div>
                            </div>
                         </div>
                      </div>
                   </div>
-               </section>
+               </div>
             </div>
          </section>
       </>
