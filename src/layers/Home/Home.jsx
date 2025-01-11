@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Home.module.scss'
 import Container from '../../components/Container/Container'
 import ProductCard from '../../components/ProductCard/ProductCard'
+import StyleCard from '../../components/StyleCard/StyleCard'
 
 import versaceLogo from '../../assets/brandsLine-versace-logo.svg'
 import zaraLogo from '../../assets/brandsLine-zara-logo.svg'
@@ -19,6 +20,11 @@ import verticalStripedShirt from '../../assets/topSelling-VERTICAL-STRIPED-SHIRT
 import courageGraphicTshirt from '../../assets/topSelling-COURAGE-GRAPHIC-T-SHIRT.png'
 import looseFitBermudaShorts from '../../assets/topSelling-LOOSE-FIT-BERMUDA-SHORTS.png'
 import fadedSkinnyJeans from '../../assets/topSelling-FADED-SKINNY-JEANS.png'
+
+import dressStyleCasualImage from '../../assets/dressStyle-Casual-img.png'
+import dressStyleFormalImage from '../../assets/dressStyle-Formal-img.png'
+import dressStylePartyImage from '../../assets/dressStyle-Party-img.png'
+import dressStyleGymImage from '../../assets/dressStyle-Gym-img.png'
 
 const Home = () => {
    return (
@@ -168,27 +174,55 @@ const Home = () => {
             </Container>
          </section>
          <section className={styles.dressStyle}>
-            <div className={styles.container}>
+            <Container>
                <div className={styles.dressStyle__container}>
                   <div className={styles.dressStyle__titleBlock}>
                      <h2 className={styles.dressStyle__titleBlock__titleText}>browse by dress style</h2>
                   </div>
                   <div className={styles.dressStyle__styleBlock}>
-                     <div className={styles.dressStyle__styleBlock__styleCard}>
-                        <p className={styles.dressStyle__styleBlock__styleCard__text}>Casual</p>
-                     </div>
-                     <div className={styles.dressStyle__styleBlock__styleCard}>
-                        <p className={styles.dressStyle__styleBlock__styleCard__text}>Formal</p>
-                     </div>
-                     <div className={styles.dressStyle__styleBlock__styleCard}>
-                        <p className={styles.dressStyle__styleBlock__styleCard__text}>Party</p>
-                     </div>
-                     <div className={styles.dressStyle__styleBlock__styleCard}>
-                        <p className={styles.dressStyle__styleBlock__styleCard__text}>Gym</p>
-                     </div>
+                     <a href='/CasualStyle' className={styles.dressStyle__styleBlock__link}>
+                        <StyleCard
+                           width='407'
+                           height='289'
+                           text='Casual'
+                           backgroundImage={dressStyleCasualImage}
+                           backgroundSize='auto'
+                           backgroundPosition='top -122px right -219px'
+                        />
+                     </a>
+                     <a href='/FormalStyle' className={styles.dressStyle__styleBlock__link}>
+                        <StyleCard
+                           width='684'
+                           height='289'
+                           text='Formal'
+                           backgroundImage={dressStyleFormalImage}
+                           backgroundSize='auto'
+                           backgroundPosition='top -146px left 0'
+                        />
+                     </a>
+                     <a href='/PartyStyle' className={styles.dressStyle__styleBlock__link}>
+                        <StyleCard
+                           width='684'
+                           height='289'
+                           text='Party'
+                           backgroundImage={dressStylePartyImage}
+                           backgroundSize='auto'
+                           backgroundPosition='top -163px left 42px'
+                        />
+                     </a>
+                     <a href='/GymStyle' className={styles.dressStyle__styleBlock__link}>
+                        <StyleCard
+                           width='407'
+                           height='289'
+                           text='Gym'
+                           backgroundImage={dressStyleGymImage}
+                           backgroundSize='auto'
+                           backgroundPosition='top -148px left 53px'
+                        />
+                     </a>
                   </div>
                </div>
-            </div>
+            </Container>
          </section>
          <section className={styles.blog}>
             <div className={styles.container}>

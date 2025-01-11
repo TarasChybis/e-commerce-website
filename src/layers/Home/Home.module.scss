@@ -221,16 +221,41 @@
 }
 
 .dressStyle {
-   &__container {}
+   width: 100%;
+   background-color: $color-brand-light;
+
+   &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      margin-top: 80px;
+      background-color: $color-primary-light;
+      border-radius: 40px;
+   }
 
    &__titleBlock {
-      &__titleText {}
+      display: flex;
+      justify-content: center;
+      margin-top: 70px;
+
+      &__titleText {
+         @include font-brand-hard;
+         color: $color-brand-dark;
+         font-size: 48px;
+         line-height: 1.2;
+         text-transform: uppercase;
+      }
    }
 
    &__styleBlock {
-      &__styleCard {
-         &__text {}
-      }
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 64px 0 76px 0;
+
+      &__link {}
    }
 }
 
