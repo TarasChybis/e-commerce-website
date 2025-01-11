@@ -1,0 +1,24 @@
+@import '../../utils/Variables.scss';
+
+.styleCard {
+   background-color: $color-brand-light;
+   padding: 25px 36px;
+   border-radius: 20px; 
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   
+   &__text {
+      @include font-primary-hard;
+      color: $color-brand-dark;
+      font-size: 36px;
+      line-height: 1.35;
+   }
+}
+
+// .styleCard:nth-child(2), 
+// .styleCard:nth-child(3) {
+//    display: flex;
+//    max-width: 684px;
+//    max-height: 289px;
+//    border: 1px solid red;
+// }
