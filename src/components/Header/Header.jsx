@@ -2,6 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import Home from "../../layers/Home/Home"
+import CasualStyle from '../../layers/CasualStyle/CasualStyle'
+import FormalStyle from '../../layers/FormalStyle/FormalStyle'
+import PartyStyle from '../../layers/PartyStyle/PartyStyle'
+import GymStyle from '../../layers/GymStyle/GymStyle'
 // import Shop from "../Pages/Home"
 // import OnSale from "../Pages/About.js"
 // import NewArrivals from "../Pages/Contacts"
@@ -58,10 +62,10 @@ const Header = () => {
          <Router>
             <Routes>
                <Route path="/" element={<Home />} />
-               {/* <Route path="/shop" element={<Shop />} />
-          <Route path="/onSale" element={<OnSale />} />
-          <Route path="/newArrivals" element={<NewArrivals />} />
-          <Route path="/brands" element={<Brands />} /> */}
+               <Route path="/CasualStyle" element={<CasualStyle />} />
+               <Route path="/FormalStyle" element={<FormalStyle />} />
+               <Route path="/PartyStyle" element={<PartyStyle />} />
+               <Route path="/GymStyle" element={<GymStyle />} />
             </Routes>
          </Router>
 
