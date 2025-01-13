@@ -47,11 +47,16 @@
          align-items: center;
          margin-left: 24px;
 
-         &__btn {
+         &__link {
             @include font-primary-light;
             color: $color-brand-dark;
             font-size: 16px;
             line-height: 1.375;
+            background-color: transparent;
+            cursor: pointer;
+         }
+
+         &__btn {
             background-color: transparent;
          }
       } 
