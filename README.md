@@ -146,10 +146,11 @@ npm start
 - Buttons;
 - Special characters;
 - Navigation by means of react-routers;
+- Pseudo-elements;
+- Icons-sprite;
 <!-- - Градієнт, Тінь; -->
-<!-- - Псевдоелементи; -->
 <!-- - iFrame, tel:, mailto; -->
-<!-- - Іконки, Спрайти, icons-sprite; -->
+
 
 ## 8. Functionality <a id="8"></a>
 
