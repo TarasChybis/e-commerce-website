@@ -31,12 +31,22 @@ const Header = () => {
                      </a>
                      <ul className={styles.nav__navBar}>
                         <li className={styles.nav__navBar__navBarItem}>
-                           <p>Shop</p>
-                           <img src={arrowDown} alt="arrow-down-image" width="16px" height="16px" />
+                           <button className={styles.nav__navBar__navBarItem__btn} type='button'>Shop</button>
                         </li>
-                        <li className={styles.nav__navBar__navBarItem}>On Sale</li>
-                        <li className={styles.nav__navBar__navBarItem}>New Arrivals</li>
-                        <li className={styles.nav__navBar__navBarItem}>Brands</li>
+                        <li className={styles.nav__navBar__navBarItem}>
+                           <button className={styles.nav__navBar__navBarItem__btn} type='button'>
+                              <img src={arrowDown} alt="arrow-down-image" width="16px" height="16px" />
+                           </button>
+                        </li>
+                        <li className={styles.nav__navBar__navBarItem}>
+                           <button className={styles.nav__navBar__navBarItem__btn} type='button'>On Sale</button>
+                        </li>
+                        <li className={styles.nav__navBar__navBarItem}>
+                           <button className={styles.nav__navBar__navBarItem__btn} type='button'>New Arrivals</button>
+                        </li>
+                        <li className={styles.nav__navBar__navBarItem}>
+                           <button className={styles.nav__navBar__navBarItem__btn} type='button'>Brands</button>
+                        </li>
                      </ul>
                   </nav>
                   <div className={styles.search}>
