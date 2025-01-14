@@ -33,7 +33,7 @@ const Header = () => {
                         </li>
                         <li className={styles.nav__navBar__navBarItem}>
                            <button className={styles.nav__navBar__navBarItem__btn} type='button' id='headerShopBtn'>
-                              <svg width="16px" height="16px">
+                              <svg width='16px' height='16px'>
                                  <use href={iconsSprite + '#icon-header-arrow-down'} />
                               </svg>
                            </button>
@@ -49,24 +49,29 @@ const Header = () => {
                         </li>
                      </ul>
                   </nav>
-                  <div className={styles.search}>
-                     <svg className={styles.search__searchIcon} width="24px" height="24px">
-                        <use href={iconsSprite + '#icon-header-search'} />
-                     </svg>
+                  <form className={styles.search}>
+                     <button className={styles.search__searchBtn} type='submit'>
+                        <svg width='24px' height='24px'>
+                           <use href={iconsSprite + '#icon-header-search'} />
+                        </svg>
+                     </button>
+                     <label for='site-search'></label>
                      <input
                         type='search'
                         className={styles.search__searchInput}
+                        id='site-search'
+                        name='searchInput'
                         placeholder='Search for products...'
                      />
-                  </div>
+                  </form>
                   <div className={styles.accauntBlock}>
                      <button className={styles.accauntBlock__cartBtn} type='button'>
-                        <svg width="24px" height="24px">
+                        <svg width='24px' height='24px'>
                            <use href={iconsSprite + '#icon-header-cart'} />
                         </svg>
                      </button>
                      <button className={styles.accauntBlock__userBtn} type='button'>
-                        <svg width="24px" height="24px">
+                        <svg width='24px' height='24px'>
                            <use href={iconsSprite + '#icon-header-user'} />
                         </svg>
                      </button>
