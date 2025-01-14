@@ -52,12 +52,14 @@
             color: $color-brand-dark;
             font-size: 16px;
             line-height: 1.375;
-            background-color: transparent;
             cursor: pointer;
          }
 
          &__btn {
+            display: flex;
+            align-items: center;
             background-color: transparent;
+            fill: $color-brand-dark;
          }
       } 
       
@@ -81,16 +83,13 @@
    align-items: center;
 
    &__searchIcon {
-      background-image: url('../../assets/Header-search-icon.svg');
-      position: absolute;
-      background-size: 100%;
       height: 24px;
       width: 24px;
+      fill: $color-brand-dark;
+      opacity: 0.4;
+      position: absolute;
       top: 12px;
       left: 16px;
-      border: none;
-      background-repeat: no-repeat;
-      opacity: 0.4;
       cursor: pointer;
    }
 
@@ -106,7 +105,19 @@
 .accauntBlock {
    display: flex;
    align-items: center;
-   // max-height: fit-content;
    gap: 14px;
-   cursor: pointer;
+
+   &__cartBtn {
+      display: flex;
+      align-items: center;
+      fill: $color-brand-dark;
+      background-color: transparent;
+   }
+   
+   &__userBtn {
+      display: flex;
+      align-items: center;
+      fill: $color-brand-dark;
+      background-color: transparent;
+   }
 }

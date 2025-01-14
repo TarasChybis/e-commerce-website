@@ -12,10 +12,8 @@ import NewArrivals from '../../layers/NewArrivals/NewArrivals'
 import Brands from '../../layers/Brands/Brands'
 
 import styles from './Header.module.scss'
-import arrowDown from '../../assets/Header-arrow-down.svg'
-import searchIcon from '../../assets/Header-search-icon.svg'
-import cartIcon from '../../assets/Header-cart-icon.svg'
-import userIcon from '../../assets/Header-user-icon.svg'
+import iconsSprite from '../../assets/icons-sprite.svg'
+
 import Container from '../Container/Container'
 
 const Header = () => {
@@ -35,7 +33,9 @@ const Header = () => {
                         </li>
                         <li className={styles.nav__navBar__navBarItem}>
                            <button className={styles.nav__navBar__navBarItem__btn} type='button' id='headerShopBtn'>
-                              <img src={arrowDown} alt="arrow-down-image" width="16px" height="16px" />
+                              <svg width="16px" height="16px">
+                                 <use href={iconsSprite + '#icon-header-arrow-down'} />
+                              </svg>
                            </button>
                         </li>
                         <li className={styles.nav__navBar__navBarItem}>
@@ -50,7 +50,9 @@ const Header = () => {
                      </ul>
                   </nav>
                   <div className={styles.search}>
-                     <img className={styles.search__searchIcon} src={searchIcon} alt="search-svg" width="24px" height='24px' />
+                     <svg className={styles.search__searchIcon} width="24px" height="24px">
+                        <use href={iconsSprite + '#icon-header-search'} />
+                     </svg>
                      <input
                         type='search'
                         className={styles.search__searchInput}
@@ -58,12 +60,16 @@ const Header = () => {
                      />
                   </div>
                   <div className={styles.accauntBlock}>
-                     <div className={styles.accauntBlock__cart}>
-                        <img className={styles.cartIcon} src={cartIcon} alt='cart-svg' width='24px' height='24px' />
-                     </div>
-                     <div className={styles.accauntBlock__user}>
-                        <img className={styles.userIcon} src={userIcon} alt='user-svg' width='24px' height='24px' />
-                     </div>
+                     <button className={styles.accauntBlock__cartBtn} type='button'>
+                        <svg width="24px" height="24px">
+                           <use href={iconsSprite + '#icon-header-cart'} />
+                        </svg>
+                     </button>
+                     <button className={styles.accauntBlock__userBtn} type='button'>
+                        <svg width="24px" height="24px">
+                           <use href={iconsSprite + '#icon-header-user'} />
+                        </svg>
+                     </button>
                   </div>
                </div>
             </Container>
