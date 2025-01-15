@@ -5,7 +5,7 @@ const ProductCard = (props) => {
    const { image, title, rungNumber, currency, currentPrice, oldPrice } = props
    let discount
 
-   const RaitingStars = () => {
+   const ProductRaitingStars = () => {
       if (rungNumber === '5.0' || rungNumber === '5' || rungNumber === '5,0') {
          return <div className={styles.productCard__rungBlock__rungStars__five}></div>
       }
@@ -54,7 +54,7 @@ const ProductCard = (props) => {
             <p className={styles.productCard__titleBlock__titleText}>{title}</p>
          </div>
          <div className={styles.productCard__rungBlock}>
-            <RaitingStars />
+            <ProductRaitingStars />
             <div className={styles.productCard__rungBlock__rungNumber}>
                <p className={styles.productCard__rungBlock__rungNumber__fromUsers}>{rungNumber}/</p>
                <p className={styles.productCard__rungBlock__rungNumber__thereIsOnly}>5</p>
