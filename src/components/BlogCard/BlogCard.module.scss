@@ -1,0 +1,90 @@
+@import '../../utils/Variables.scss';
+
+.blogCard {
+   width: 400px;
+   height: 240px;
+   border: 1px solid rgba($color: #000000, $alpha: 0.1);
+   border-radius: 20px;
+   padding: 28px 32px;
+
+   &__userRaitingStars {
+      &__five {
+         width: 140px;
+         height: 22.5px;
+         background-image: url('../../assets/rungStars-five.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: scroll;
+      }
+      &__fourPointFive {
+         width: calc(140px / 5 * 4.5);
+         height: 22.5px;
+         background-image: url('../../assets/rungStars-five.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: scroll;
+      }
+      &__four {
+         width: calc(140px / 5 * 4);
+         height: 22.5px;
+         background-image: url('../../assets/rungStars-five.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: scroll;
+      }
+      &__threePointFive {
+         width: calc(140px / 5 * 3.5);
+         height: 22.5px;
+         background-image: url('../../assets/rungStars-five.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: scroll;
+      }
+      &__three {
+           width: calc(140px / 5 * 3);
+         height: 22.5px;
+         background-image: url('../../assets/rungStars-five.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-attachment: scroll;
+      }
+   }
+
+   &__userTitle {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+
+      &__userName {
+         @include font-primary-hard;
+         color: $color-brand-dark;
+         font-size: 20px;
+         line-height: 1.1;
+      }
+
+      &__checkMarkIcon {
+         width: 24px;
+         height: 24px;
+         fill: green;
+         background-color: transparent;
+         margin-left: 4px;
+      }
+   }
+
+   &__userBlogText {
+      margin-top: 12px;
+      @include font-primary-light;
+      color: $color-brand-dark;
+      font-size: 16px;
+      line-height: 1.375;
+      opacity: 0.6;
+   }
+}
+
+
+
+
+
+            
+
+
