@@ -3,6 +3,7 @@ import styles from './Home.module.scss'
 import Container from '../../components/Container/Container'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import StyleCard from '../../components/StyleCard/StyleCard'
+import BlogCard from '../../components/BlogCard/BlogCard'
 
 import versaceLogo from '../../assets/brandsLine-versace-logo.svg'
 import zaraLogo from '../../assets/brandsLine-zara-logo.svg'
@@ -25,6 +26,8 @@ import dressStyleCasualImage from '../../assets/dressStyle-Casual-img.png'
 import dressStyleFormalImage from '../../assets/dressStyle-Formal-img.png'
 import dressStylePartyImage from '../../assets/dressStyle-Party-img.png'
 import dressStyleGymImage from '../../assets/dressStyle-Gym-img.png'
+
+import iconsSprite from '../../assets/icons-sprite.svg'
 
 const Home = () => {
    return (
@@ -225,27 +228,52 @@ const Home = () => {
             </Container>
          </section>
          <section className={styles.blog}>
-            <div className={styles.container}>
+            <Container>
                <div className={styles.blog__container}>
                   <div className={styles.blog__titleBlock}>
-                     <p className={styles.blog__titleBlock__titleText}></p>
-                  </div>
-                  <div className={styles.blog__carouselBlog}>
-                     <div className={styles.blog__carouselBlog__container}>
-                        <div className={styles.blog__carouselBlog__card}>
-                           <div className={styles.blog__carouselBlog__card__rungStars}></div>
-                           <div className={styles.blog__carouselBlog__card__userBlock}>
-                              <div className={styles.blog__carouselBlog__card__userBlock__userTitle}>
-                                 <p className={styles.blog__carouselBlog__card__userBlock__userTitle__userName}></p>
-                                 <img className={styles.blog__carouselBlog__card__userBlock__userTitle__checkMarkIcon} src='/' alt='check-mark-icon'></img>
-                              </div>
-                              <div className={styles.blog__carouselBlog__card__userBlock__userText}></div>
-                           </div>
-                        </div>
+                     <p className={styles.blog__titleBlock__titleText}>OUR HAPPY CUSTOMERS</p>
+                     <div className={styles.blog__titleBlock__arrowsBlock}>
+                        <button className={styles.blog__titleBlock__arrowsBlock__arrowDownButton} type='button'>
+                           <svg width="24px" height="24px" >
+                              <use href={iconsSprite + '#icon-blog-arrow'} />
+                           </svg> 
+                        </button>
+                        <button className={styles.blog__titleBlock__arrowsBlock__arrowUpButton} type='button'>
+                           <svg width="24px" height="24px" >
+                              <use href={iconsSprite + '#icon-blog-arrow'} />
+                           </svg>
+                        </button>
                      </div>
                   </div>
+                  <div className={styles.blog__carouselBlog}>
+                     <BlogCard
+                        userRaitingNumber='5'
+                        userName='Sarah M.'
+                        userBlogText="I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+                     />
+                     <BlogCard
+                        userRaitingNumber='5'
+                        userName='Alex K.'
+                        userBlogText="Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+                     />
+                     <BlogCard
+                        userRaitingNumber='5'
+                        userName='James L.'
+                        userBlogText="As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+                     />
+                     <BlogCard
+                        userRaitingNumber='5'
+                        userName='James L.'
+                        userBlogText="As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+                     />
+                     <BlogCard
+                        userRaitingNumber='5'
+                        userName='James L.'
+                        userBlogText="As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+                     />
+                  </div>
                </div>
-            </div>
+            </Container>
          </section>
       </>
    )

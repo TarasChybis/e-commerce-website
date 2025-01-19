@@ -255,32 +255,68 @@
       gap: 20px;
       margin: 64px 0 76px 0;
 
-      &__link {}
+      // &__link {}
    }
 }
 
 .blog {
-   &__container {}
+   display: flex;
+   width: 100%;
+   background-color: $color-brand-light;
+
+   &__container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 80px;
+      background-color: $color-brand-light;
+   }
 
    &__titleBlock {
-      &__titleText {}
+      display: flex;
+      justify-content: space-between;
+      
+      &__titleText {
+         @include font-brand-hard;
+         color: $color-brand-dark;
+         font-size: 48px;
+         line-height: 1.2;
+         text-transform: uppercase;
+      }
+
+      &__arrowsBlock {
+         display: flex;
+         align-items: end;
+         gap: 16px;
+
+         &__arrowDownButton {
+            display: flex;
+            align-items: center;
+            background-color: transparent; 
+         }
+
+         &__arrowDownButton:hover {
+            background-color: $color-brand-dark;
+            fill: $color-brand-light;
+         }
+
+         &__arrowUpButton {
+            display: flex;
+            align-items: center;
+            background-color: transparent; 
+            rotate: 180deg;
+         }
+         
+         &__arrowUpButton:hover {
+            background-color: $color-brand-dark;
+            fill: $color-brand-light;
+         }
+      }
    }
 
    &__carouselBlog {
-      &__container {}
-
-      &__card {
-         &__rungStars {}
-
-         &__userBlock {
-            &__userTitle {
-               &__userName {}
-
-               &__checkMarkIcon {}
-            }
-
-            &__userText {}
-         }
-      }
+      display: flex;
+      gap: 20px;
+      margin-top: 40px;
    }
 }
