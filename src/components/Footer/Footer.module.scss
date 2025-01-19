@@ -1,0 +1,37 @@
+@import '../../utils/Variables.scss';
+
+.footer {
+   width: 100%;
+   background-color: $color-primary-light;
+   margin-top: 170px;
+
+   &__subscribing {
+      &__title{}
+      &__form {}
+   }
+
+   &__main {
+      &__social {
+         &__logoLink {
+            &__logoText {}
+         }
+         &__text {}
+         &__icons {
+            &__icon {}
+         }
+      }
+      &__block {
+         &__title {}
+         &__list {
+            &__item {}
+         }
+      }
+   }
+
+   &__finish {
+      &__text {}
+      &__paymentWay {
+         &__iconPayment {}
+      }
+   }
+}
